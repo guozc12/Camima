@@ -7,7 +7,7 @@
     <param.authnamewatermark>Zhichao Guo</param.authnamewatermark>
     <param.email>guozc12@gmail.com</param.email>
     <param.company>CUHK</param.company>
-    <param.summary>Camima is a camera controller and image viewer for cold atom experiment.</param.summary>
+    <param.summary>Camera control and image viewer</param.summary>
     <param.description />
     <param.screenshot />
     <param.guid />
@@ -43,6 +43,7 @@
       <param.icon />
       <param.icons />
       <param.version />
+      <param.company />
       <param.description />
       <param.screenshot />
       <param.guid />
@@ -71,13 +72,21 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\Camima.mlapp</file>
     </fileset.main>
-    <fileset.resources>
+    <fileset.resources />
+    <fileset.package>
+      <file>${PROJECT_ROOT}\Camset.mlapp</file>
+      <file>${PROJECT_ROOT}\Vuima.mlapp</file>
+    </fileset.package>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\cameraIcon.png</file>
       <file>${PROJECT_ROOT}\Camset.mlapp</file>
       <file>${PROJECT_ROOT}\Fitset.mlapp</file>
+      <file>${PROJECT_ROOT}\Initialize.png</file>
+      <file>${PROJECT_ROOT}\setting.png</file>
+      <file>${PROJECT_ROOT}\Start.png</file>
+      <file>${PROJECT_ROOT}\Stop.png</file>
       <file>${PROJECT_ROOT}\Vuima.mlapp</file>
-    </fileset.resources>
-    <fileset.package />
-    <fileset.depfun>
+      <file>${PROJECT_ROOT}\Vuima.png</file>
       <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper\+uiextras\+jTree\loadJavaCustomizations.m</file>
       <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper\+uiextras\+jTree\Tree.m</file>
       <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper\+uiextras\+jTree\TreeNode.m</file>
