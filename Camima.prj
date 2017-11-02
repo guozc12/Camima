@@ -7,7 +7,7 @@
     <param.authnamewatermark>Zhichao Guo</param.authnamewatermark>
     <param.email>guozc12@gmail.com</param.email>
     <param.company>CUHK</param.company>
-    <param.summary>Camera control and image viewer</param.summary>
+    <param.summary />
     <param.description />
     <param.screenshot />
     <param.guid />
@@ -43,7 +43,10 @@
       <param.icon />
       <param.icons />
       <param.version />
+      <param.authnamewatermark />
+      <param.email />
       <param.company />
+      <param.summary />
       <param.description />
       <param.screenshot />
       <param.guid />
@@ -72,25 +75,14 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\Camima.mlapp</file>
     </fileset.main>
-    <fileset.resources />
-    <fileset.package>
-      <file>${PROJECT_ROOT}\Camset.mlapp</file>
-      <file>${PROJECT_ROOT}\Vuima.mlapp</file>
-    </fileset.package>
-    <fileset.depfun>
-      <file>${PROJECT_ROOT}\cameraIcon.png</file>
+    <fileset.resources>
       <file>${PROJECT_ROOT}\Camset.mlapp</file>
       <file>${PROJECT_ROOT}\Fitset.mlapp</file>
-      <file>${PROJECT_ROOT}\Initialize.png</file>
-      <file>${PROJECT_ROOT}\setting.png</file>
-      <file>${PROJECT_ROOT}\Start.png</file>
-      <file>${PROJECT_ROOT}\Stop.png</file>
       <file>${PROJECT_ROOT}\Vuima.mlapp</file>
-      <file>${PROJECT_ROOT}\Vuima.png</file>
-      <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper\+uiextras\+jTree\loadJavaCustomizations.m</file>
-      <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper\+uiextras\+jTree\Tree.m</file>
-      <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper\+uiextras\+jTree\TreeNode.m</file>
-    </fileset.depfun>
+      <file>C:\Users\Dajun Wang\Documents\MATLAB\Add-Ons\Toolboxes\Tree Controls for User Interfaces\code\JavaTreeWrapper</file>
+    </fileset.resources>
+    <fileset.package />
+    <fileset.depfun />
     <build-deliverables>
       <file location="${PROJECT_ROOT}\Camima\for_testing" name="Camima.exe" optional="false">C:\Users\Dajun Wang\Desktop\InProgress\CameraControlImageProcessMatlab\Camima\Camima\for_testing\Camima.exe</file>
       <file location="${PROJECT_ROOT}\Camima\for_testing" name="readme.txt" optional="true">C:\Users\Dajun Wang\Desktop\InProgress\CameraControlImageProcessMatlab\Camima\Camima\for_testing\readme.txt</file>
