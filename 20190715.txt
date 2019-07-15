@@ -1,0 +1,15 @@
+Note 20190715
+1. 现在要重新处理OD，所以file name要怎么命名？
+以前是005-Name-OD
+现在需要重新处理OD，希望是不要覆盖原先的ODfile
+还是把不同放在中间键位上的
+采用以下命名方式
+005-NameNew1-OD
+
+English version：
+Now, we need recalculate OD picture, so we will have two OD image.
+How we name the new one?
+for the old one, name is 005-Name-OD
+because for all OD file, there are many function just take the last key work as
+OD, so we will just change the middle key word as following:
+005-NameNew1-OD
