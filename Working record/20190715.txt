@@ -1,0 +1,43 @@
+20190715
+
+1. First, we define the new name method for new OD.
+
+2. secound, we will test Na OD with counting method.
+When testing counting method for OD, we find the counting result is easily affected by background
+value, when size of ROI get larger and larger, which cause the result much un-precise
+so what we expect is that by choosing a background the number of atom will be independent from
+the size we crop.
+
+For now, the idea is clear, but how to deploy this method to get proper background?
+
+Question: Is the mainly problem about the background value taking?
+
+A. maybe the better way is that: we can crop the outer side image get its mean as counting background, which seems
+directly solve the problem of vary of number with crop size.
+B. Why not just use total number from double peak as the final value?
+
+%%%%%%  not finished yet  %%%%%%%
+
+3. For the next step we will implement new OD for Rb picture, because Rb old OD get many wrong value
+problem is that we do not see any steps on 200 which means there is /????? no cut of log??? no ,because this 
+value is caculate from cutlog plus modify, which means if cutlog give zero, plus the 200 offset, 
+and plus also the high intensity modification, we can still get ramdom value.
+If we calcualte Log0.8 we get -0.2 around, and them due to add the intensity correction, we will meet the case that for
+cutlog is OK, we can calculate some negative value larger than -0.2 however after adding the lineare correction , we will
+meet (200+1000*cutlog + linear coorection) still nagetive value, which cause our problem.
+
+so the correct way to do this maybe is cut again outside the whole fomula.
+
+Notice: when save a image, we always change numerical value to unsigned int, which may cause probelm
+when we save a negative value to unsigned int.
+
+to choose proper background value and proper cutlog bound is depend on how much noise we will have.
+
+by checking Na image, we get the fluctuation of light and atom is +/- 40 counting, which will cause maxium negative around
+-40/87 - 0.1 is about -0.6. For Rb we have -100/39 -0.2 about -2.6 thus , we add 3000 as offset thus ,there will be not broken image
+any more.
+
+
+
+temp
+C:\Users\Administrator.WIN-KQNL4VO8QRH\Dropbox\@Droplet\DATA\DATA20190621 - Rb & Na - 1070 OT - op+Cycling HF 15x imaging - with gradient compensation and field dynamic compensation - 5ms ramp\data\2019\Jun\21
