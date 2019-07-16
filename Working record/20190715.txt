@@ -24,7 +24,7 @@ value is caculate from cutlog plus modify, which means if cutlog give zero, plus
 and plus also the high intensity modification, we can still get ramdom value.
 If we calcualte Log0.8 we get -0.2 around, and them due to add the intensity correction, we will meet the case that for
 cutlog is OK, we can calculate some negative value larger than -0.2 however after adding the lineare correction , we will
-meet (200+1000*cutlog + linear coorection) still nagetive value, which cause our problem.
+meet (200+1000*cutlog + linear coorection) still nagetive value, which causes our problem.
 
 so the correct way to do this maybe is cut again outside the whole fomula.
 
